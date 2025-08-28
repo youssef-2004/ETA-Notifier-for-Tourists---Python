@@ -11,7 +11,7 @@ authors:
 
 version: 1.0.0
 date-released: 2025-08-28
-repository-code: https://github.com/ahsan-141117/ETA-Notifier-for-Dubai-Desert-Safari
+repository-code: https://github.com/ahsan-141117/ETA-Notifier-for-Dubai-Desert-Safari---Python
 
 preferred-citation:
   type: software
@@ -20,4 +20,4 @@ preferred-citation:
     - family-names: Hummayoun
       given-names: Mohammad Ahsan
   year: 2025
-  url: https://github.com/ahsan-141117/ETA-Notifier-for-Dubai-Desert-Safari
+  url: https://github.com/ahsan-141117/ETA-Notifier-for-Dubai-Desert-Safari---Python
