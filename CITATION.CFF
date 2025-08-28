@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+title: Revenue and Anomaly Brief in LangChain
+message: If you use this software, please cite it. Your citation helps the community and acknowledges our work.
+type: software
+
+authors:
+  - family-names: Hummayoun
+    given-names: Mohammad Ahsan
+    orcid: ""
+    affiliation: ""
+
+version: 1.0.0
+date-released: 2025-08-28
+repository-code: https://github.com/ahsan-141117/ETA-Notifier-for-Dubai-Desert-Safari
+
+preferred-citation:
+  type: software
+  title: ETA Notifier for Dubai Desert Safari
+  authors:
+    - family-names: Hummayoun
+      given-names: Mohammad Ahsan
+  year: 2025
+  url: https://github.com/ahsan-141117/ETA-Notifier-for-Dubai-Desert-Safari
