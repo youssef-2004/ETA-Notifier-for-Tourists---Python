@@ -1,0 +1,5 @@
+booking_id,customer_name,customer_phone,pickup_time,pickup_address,assigned_driver_id
+B101,John Smith,+971551234567,15:00,Marina Walk,D001
+B102,Jane Doe,+971509876543,16:30,Burj Khalifa,D002
+B103,Peter Jones,+971521112222,17:00,The Dubai Mall,D001
+B104,Sarah Lee,+971563334444,18:15,Jumeirah Beach Residence,D003
