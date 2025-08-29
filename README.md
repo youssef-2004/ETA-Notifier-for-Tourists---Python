@@ -33,3 +33,21 @@ Messages are sent to customers through the **Twilio WhatsApp Sandbox** using the
    TWILIO_ACCOUNT_SID=your_twilio_account_sid
    TWILIO_AUTH_TOKEN=your_twilio_auth_token
    TWILIO_WHATSAPP_FROM=whatsapp:+14155238886
+
+# 🚀 Setup and Requirements
+
+1. **Environment File**  
+   Create a `.env` file containing your API credentials:  
+   ```ini
+   ORS_API_KEY=your_openrouteservice_api_key
+   TWILIO_ACCOUNT_SID=your_twilio_account_sid
+   TWILIO_AUTH_TOKEN=your_twilio_auth_token
+   TWILIO_WHATSAPP_FROM=whatsapp:+14155238886
+
+   
+2. **CSV Files**
+   Prepare two CSV files in the project directory:
+
+   bookings.csv — contains customer name, phone number, pickup location, and scheduled pickup time.
+
+   drivers.csv — contains driver ID, current location, and vehicle details.
