@@ -1,17 +1,35 @@
 # Please credit Mohammad Ahsan Hummayoun when using, sharing, or adapting this code
 
-Tour operators of the Dubai Desert Safari are unable to notify tourists about potential delays in the advertised pickup times. This workflow is designed to handle that communication via Whatsapp. Using a free route selection API, it calculates the estimated pickup time and based on an algorithm, it sends a confirmation/delay message.
+This Python workflow automates communication between tour operators and their customers by providing real-time pickup updates through WhatsApp.  
+It solves the challenge of notifying customers about potential delays in advertised pickup times, ensuring smoother operations and better customer experience.
 
-This solution can be applied to any tour or service business that relies on timely pickups, providing a reliable way to manage customer expectations.
+This solution is suitable for any tourism or transport business that relies on timely pickups — such as city tours, airport transfers, shuttle services, or excursion operators.
 
-To run, you need to set up a .env file with your API credentials. You'll also need to have two CSV files: 
+# ⚙️ How it Works
 
-bookings.csv and drivers.csv.
+**1. Booking & Driver Data**  
+The workflow reads two CSV files:  
+- `bookings.csv` containing customer details and pickup locations  
+- `drivers.csv` containing driver details and their current positions  
 
-This workflow relies on external APIs:
+**2. Route & ETA Calculation**  
+Using the **OpenRouteService API (ORS_API_KEY)**, the system calculates estimated pickup times based on driver locations, traffic, and route planning.  
 
-OpenRouteService (ORS_API_KEY) for geocoding and calculating ETAs.
+**3. Delay Detection & Messaging**  
+If the estimated pickup time differs from the scheduled time beyond a defined threshold, the workflow automatically determines whether to send a **confirmation** or **delay** message.  
 
-Twilio Sandbox (TWILIO_ACCOUNT_SID, TWILIO_AUTH_TOKEN, TWILIO_WHATSAPP_FROM) for sending the WhatsApp messages.
+**4. WhatsApp Notifications**  
+Messages are sent to customers through the **Twilio WhatsApp Sandbox** using the credentials:  
+- `TWILIO_ACCOUNT_SID`  
+- `TWILIO_AUTH_TOKEN`  
+- `TWILIO_WHATSAPP_FROM`  
 
+# 🚀 Setup and Requirements
 
+1. **Environment File**  
+   Create a `.env` file containing your API credentials:  
+   ```ini
+   ORS_API_KEY=your_openrouteservice_api_key
+   TWILIO_ACCOUNT_SID=your_twilio_account_sid
+   TWILIO_AUTH_TOKEN=your_twilio_auth_token
+   TWILIO_WHATSAPP_FROM=whatsapp:+14155238886
